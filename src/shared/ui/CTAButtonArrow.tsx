@@ -1,4 +1,8 @@
-export function PrimaryCTAArrow({ text, ...props }) {
+interface PrimaryCTAArrowProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  text: string
+}
+
+export function PrimaryCTAArrow({ text, ...props }: PrimaryCTAArrowProps) {
     return (
       <button 
         {...props}

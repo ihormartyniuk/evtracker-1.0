@@ -17,7 +17,7 @@ export default function LoadingResults() {
 
   useEffect(() => {
     let stepIndex = 0
-    let progressTimer: NodeJS.Timeout
+    let progressTimer: number | undefined
 
     const runSteps = async () => {
       for (const step of STEPS) {

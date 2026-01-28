@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom'
 import { loadState } from '../../../shared/storage'
 import { calcStage } from '../stage'
 import { track } from '../../../analytics/metaPixel'
-import { getFlag } from '../../../config/flags'
 import { profileCopyByType, planDay0ByProfile } from '../../../config/content/en'
 import Page from '../../../shared/ui/Page'
 

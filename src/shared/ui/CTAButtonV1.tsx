@@ -1,4 +1,8 @@
-export function PrimaryCTA({ children, ...props }) {
+interface PrimaryCTAProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  children: React.ReactNode
+}
+
+export function PrimaryCTA({ children, ...props }: PrimaryCTAProps) {
     return (
       <button
         {...props}

@@ -10,13 +10,11 @@ import women1Image from '../../../assets/gen_women_tea.png'
 
 export default function Landing() {
   const navigate = useNavigate()
-  const [stage, setStage] = useState<string>('')
   const [copy, setCopy] = useState(appCopy.landing)
   
   useEffect(() => {
     const state = ensureState()
     const currentStage = calcStage(state.firstVisitTs, Date.now())
-    setStage(currentStage)
     
     const variant = getVariant('landing_headline', ['A', 'B'])
     const variantCopy = variant === 'B' 

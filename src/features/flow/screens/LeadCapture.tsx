@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { ensureState, saveState, loadState } from '../../../shared/storage'
+import { ensureState, saveState } from '../../../shared/storage'
 import { track } from '../../../analytics/metaPixel'
 import { calcStage } from '../stage'
 import Page from '../../../shared/ui/Page'
