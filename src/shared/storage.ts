@@ -1,4 +1,5 @@
 import type { ProfileType } from '../config/content/types'
+import { v4 as uuidv4 } from "uuid";
 
 export interface FlowState {
   userId: string
@@ -56,7 +57,7 @@ export function ensureState(): FlowState {
   
   // Create new state
   const newState: FlowState = {
-    userId: crypto.randomUUID(),
+    userId: uuidv4(),
     firstVisitTs: now,
     lastSeenTs: now,
     streak: 0,
